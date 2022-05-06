@@ -1,6 +1,12 @@
-# SidebarBoilerplate
+# ANGULAR Sidebar Boilerplate - [UNDER CONSTRUCTION]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+
+## This template contains
+- Added angular router with fade-in animation.
+- Lazy Load Modules
+- Using scss style sheet.
+- Animated toggle sidebar.
 
 ## Development server
 
