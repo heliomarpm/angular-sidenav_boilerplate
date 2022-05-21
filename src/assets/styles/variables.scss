@@ -1,0 +1,9 @@
+:root {
+  /* Layout variables */
+  --height_header: 64px;
+  --height_footer: 0px;
+  --height_sidenav: calc(100vh - (var(--height_header) + var(--height_footer)));
+  --height_content: var(--height_sidenav);
+  --width_sidenav: 60px;
+  --width_content: calc(100vw - --width_sidenav);
+}

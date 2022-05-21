@@ -1,0 +1,11 @@
+<nav aria-label="BreadCrumbs">
+  <ol class="breadcrumbs">
+    <li class="breadcrumbs-list" *ngFor="let item of breadCrumbs; last as last">
+      <a class="breadcrumbs-link" [ngClass]="{'bolder-route': last}"> <!-- [routerLink]="item.url"  -->
+        <!-- {{ (("BREADCRUMBS." + item.name) | translate).replace('BREADCRUMBS.', '') }} -->
+        {{ item.name }}
+      </a>
+      <span class="breadcrumbs-separator" [hidden]="last">/</span>
+    </li>
+  </ol>
+</nav>

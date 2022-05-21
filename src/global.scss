@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/variables.scss";
+@import "assets/styles/theme.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  position: relative;
+  outline: none;
+}
+
+body {
+  // --body-background: linear-gradient(to right, #f8fcff, #ccdaea);
+  // --body-background-color: #f8fcff;
+  // --body-background-secondary-color: #ccdaea;
+  // --text-color: #252220;
+  // --text-secondary-color: #323232;
+  // --icon-color: #000021;
+  // --sidenav-background: #fff;
+  // --sidenav-color: #56504c;
+  // --sidenav-selected-color: #efe9e5;
+  // --sidenav-selected-icon-color: #000021;
+  // --header-background: #000021;
+  // --header-color: #fff;
+  // --footer-background: #000021;
+  // --footer-color: #fff;
+  // --breadcrumb-color: #6d7b92;
+  // --breadcrumb-active-color: #647086;
+
+  margin: 0;
+  font-size: 0.9em;
+  background: var(--body-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa {
+  color: var(--text-color);
+}

@@ -1,0 +1,76 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-background);
+  height: var(--height_header);
+
+  .left {
+    display: inherit;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .right {
+    display: inherit;
+    align-items: center;
+    justify-content: flex-end;
+
+    a {
+      display: flex;
+      color: var(--header-color);
+      margin-right: 0.5rem;
+
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+header,
+.fa {
+  color: var(--header-color);
+}
+
+.menu-animation {
+  margin: 2px 20px;
+  width: 20px;
+  background-color: transparent;
+}
+.menu-animation > span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 8px;
+  background-color: var(--header-color);
+}
+
+.menu-animation > span:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.menu-animation,
+.menu-animation > span {
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-animation.active > span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-animation.active > span:nth-child(1),
+.menu-animation.active > span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.menu-animation.active > span:nth-child(1) {
+  transform: translateY(6px);
+}
+
+.menu-animation.active > span:nth-child(3) {
+  transform: translateY(-6px) rotate(-90deg);
+}
+
+.menu-animation.active {
+  transition-delay: 0.2s;
+  transform: rotate(-225deg);
+}

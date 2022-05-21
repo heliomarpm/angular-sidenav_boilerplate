@@ -1,0 +1,47 @@
+nav {
+  background-color: var(--sidenav-background);
+  width: var(--width_sidenav);
+  height: var(--height_sidenav);
+
+  transition: width 0.3s ease;
+  &:hover {
+    width: 180px;
+
+    a > .nav-text {
+      opacity: 1;
+    }
+  }
+
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    background-color: greenyellow;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: var(--sidenav-color);
+
+      transition: width 0.3s ease;
+      .nav-text {
+        opacity: 0;
+      }
+      &:hover {
+        width: 180px;
+        .nav-text {
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+}

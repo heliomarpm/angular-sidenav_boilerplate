@@ -1,0 +1,116 @@
+:root {
+  // Main Colors
+  $white-color: #fff;
+  $black-color: #000;
+  $dark-color: #212121;
+  $dark-blue-color: #000021;
+
+  $background-color: #f8fcff;
+  $background-color-dark: #121212;
+  $background-secondary-color: #ccdaea;
+  $background-secondary-color-dark: #080808;
+  $background-color-gradient: linear-gradient(
+    to right,
+    $background-color,
+    $background-secondary-color
+  );
+  $background-color-gradient-dark: linear-gradient(
+    to left,
+    $background-color-dark,
+    $background-secondary-color-dark
+  );
+
+  $text-color: #252220;
+  $text-color-dark: #fff;
+  $text-secondary-color: #323232;
+  $text-secondary-color-dark: rgba(255, 255, 255, 0.7);
+
+  $icon-color: #000021;
+  $icon-color-dark: #aaa;
+
+  $sidenav-color: #56504c;
+  $sidenav-selected-color: #efe9e5;
+  $sidenav-selected-color-dark: #3d3d3d;
+
+  $breadcrumb-color: #6d7b92;
+  $breadcrumb-active-color: #647086;
+
+  $colors: (
+    --body-background: (
+      $background-color-gradient,
+      $background-color-gradient-dark,
+    ),
+    --body-background-color: (
+      $background-color,
+      $background-color-dark,
+    ),
+    --body-background-secondary-color: (
+      $background-secondary-color,
+      $background-secondary-color-dark,
+    ),
+    --text-color: (
+      $text-color,
+      $text-color-dark,
+    ),
+    --text-secondary-color: (
+      $text-secondary-color,
+      $text-secondary-color-dark,
+    ),
+    --icon-color: (
+      $icon-color,
+      $icon-color-dark,
+    ),
+    --sidenav-background: (
+      $white-color,
+      $dark-color,
+    ),
+    --sidenav-color: (
+      $sidenav-color,
+      $white-color,
+    ),
+    --sidenav-selected-color: (
+      $sidenav-selected-color,
+      $sidenav-selected-color-dark,
+    ),
+    --sidenav-selected-icon-color: (
+      $dark-blue-color,
+      $white-color,
+    ),
+    --header-background: (
+      $dark-blue-color,
+      $dark-color,
+    ),
+    --header-color: (
+      $text-color-dark,
+      $text-color-dark,
+    ),
+    --footer-background: (
+      $dark-blue-color,
+      $dark-color,
+    ),
+    --footer-color: (
+      $text-color-dark,
+      $text-color-dark,
+    ),
+    --breadcrumb-color: (
+      $breadcrumb-color,
+      $white-color,
+    ),
+    --breadcrumb-active-color: (
+      $breadcrumb-active-color,
+      $white-color,
+    ),
+  );
+
+  .light-theme {
+    @each $name, $value in $colors {
+      #{$name}: nth($value, 1);
+    }
+  }
+  .dark-theme {
+    @each $name, $value in $colors {
+      #{$name}: nth($value, 2);
+    }
+  }
+  
+}
