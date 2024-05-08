@@ -4,12 +4,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 ## This template contains (WIP)
-  [x] Using scss style sheet.
-  [x] Added angular router with fade-in animation.
-  [x] Lazy Load Modules
-  [x] Breadcrumbs navigator
-  [x] Animated toggle sidenav.
-  [x] Switch template light or dark
+
+[x] Using scss style sheet.\
+[x] Added angular router with fade-in animation.\
+[x] Lazy Load Modules\
+[x] Breadcrumbs navigator\
+[x] Animated toggle sidenav.\
+[x] Switch template light or dark\
 
 ## Development server
 
