@@ -2,7 +2,7 @@
   *ngIf="checkRawPages(router.url) else raw"
   logo="{{ logo }}" title="{{ title }}"
   >
-  <app-breadcrumbs *ngIf="router.url !== '/home'" [url]="router.url"></app-breadcrumbs>
+  <app-breadcrumbs [url]="router.url" *ngIf="router.url !== '/home'"></app-breadcrumbs>
 
   <div class="content" [@fadeInAnimation]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
